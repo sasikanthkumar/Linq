@@ -1,9 +1,8 @@
-import HelloWorld from './hello-world';
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import Holder from './holder';
 
 ReactDOM.render(
-    <HelloWorld phrase = "World" / >,
+    <Holder / >,
     document.querySelector('.root')
 );

@@ -1,0 +1,117 @@
+.navBarLinks{
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: small;
+  color: black;
+}
+
+.navbar-toggle .icon-bar{
+  background-color: black;
+}
+
+.navbar-brand{
+  color: black;
+}
+
+.navBarContainer{
+  background-color: white;
+  height: 64px;
+}
+
+.navbar-header{
+  padding-top: 10px;
+}
+
+.navbar-collapse{
+  background-color: white;
+}
+
+.whatIsLinqContainer{
+  padding-top: 64px;
+  background-color: #f0f5f9;
+}
+
+.whatIsLinqHeading{
+  font-size: 55px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px){
+  .navbar-nav{
+    padding-top: 14px;
+  }
+
+  .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+    padding-top: 18px;
+  }
+}
+
+.nav>li>a:focus, .nav>li>a:hover{
+  background-color: transparent;
+  border-bottom: 1px solid red;
+  color: red;
+}
+
+.whatIsLinqText{
+  font-size: 18px;
+  line-height: 1.5;
+  color: #828282;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.rowPaddingBtm{
+  padding-bottom: 4em;
+  padding-top: 4em;
+}
+
+
+.whatIsLinqCard{
+  padding: 30px;
+  float: left;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  margin-bottom: 40px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.whatIsLinqCard:hover {
+  background: #F73859;
+  bottom: 10px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 18px 71px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 18px 71px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 18px 71px -10px rgba(0, 0, 0, 0.75);
+  color: white;
+}
+
+.whatIsLinqCard:hover .whatIsLinqCardHeading{
+  color: white;
+}
+
+.whatIsLinqCard:hover .whatIsLinqCardText{
+  color: white;
+}
+
+
+.whatIsLinqCardHeading{
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #5d5d5d;
+}
+
+.whatIsLinqCardText{
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #828282;
+}
