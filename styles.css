@@ -35,8 +35,8 @@ body{
 
 .whatIsLinqContainer{
   /*background-color: #f0f5f9;*/
-  background-color: #eee;
-  /*background-color: #08152a;*/
+  /*background-color: #eee;*/
+  background-color: #08152a;
 }
 
 .openAStoreContainer{
@@ -59,7 +59,7 @@ body{
   text-align: center;
 }
 
-.whatIsLinqHeading, .careersHeading, .ourPartnersHeading{
+ .careersHeading, .ourPartnersHeading{
   font-family: 'Roboto', sans-serif;
   font-size: 36px;
   margin-top: 0px;
@@ -68,6 +68,17 @@ body{
   color: #1f305f;
   text-align: center;
   padding-bottom: 30px;
+}
+
+.whatIsLinqHeading{
+  padding-top: 75px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
 }
 
 .ourPartnersHeading{
@@ -115,6 +126,17 @@ body{
 }
 
 
+.whatIsLinqText{
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  letter-spacing: 1px;
+}
+
 .openAStoreText{
   margin-top: 30px;
   margin-bottom: 20px;
@@ -129,7 +151,7 @@ body{
 
 .rowPaddingBtm{
   padding-bottom: 2em;
-  padding-top: 4em;
+  /*padding-top: 4em;*/
 }
 
 
@@ -143,10 +165,14 @@ body{
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  background: white;
-  min-height: 250px;
+  background: transparent;
 }
 
+.linqAdvanImg{
+  width: 60px;
+}
+
+/*
 .whatIsLinqCard:hover {
   background: #294fb4;
   bottom: 10px;
@@ -164,24 +190,24 @@ body{
 .whatIsLinqCard:hover .whatIsLinqCardText{
   color: white;
 }
-
+*/
 
 .whatIsLinqCardHeading{
-  font-size: 22px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 30px;
   margin-bottom: 30px;
-  color: #294fb4;
+  color: #fff;
   text-align: center;
+  font-weight: 600;
 }
 
 .whatIsLinqCardText{
-  margin-bottom: 10px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
   font-weight: 400;
-  color: #000;
+  color: rgb(124, 137, 148);
+  text-align: center;
 }
 
 
@@ -509,7 +535,7 @@ body{
   color: #000;
 }
 
-.testimonials-heading p, .linqAdvantages, .weAreLinqed {
+.testimonials-heading p, .weAreLinqed {
   font-family: 'Roboto', sans-serif;
     font-size: 28px;
     margin-top: 30px;
@@ -521,8 +547,13 @@ body{
 }
 
 .linqAdvantages{
-  margin-bottom: 1.5em;
-  margin-top: 0px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffd204;
+  text-align: center;
 }
 
 .weAreLinqed{
