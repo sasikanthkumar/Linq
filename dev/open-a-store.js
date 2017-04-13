@@ -5,12 +5,22 @@ class OpenAStore extends React.Component{
   render(){
     return(
       <div className = 'container-fluid openAStoreContainer'>
-      <div className = 'container'>
+      <div className = 'row rowPaddingBtm'>
+        <div className = 'col-md-8 col-md-offset-2 fadeInUp animated'>
+          {/*<Link to="/partner-with-us-form" ><button className = 'form-links-btn' onClick={this.handleClick}> Partner With Us </button></Link>*/}
+
+          <h2 className = 'whatIsLinqHeading'>What Is Linq?</h2>
+          <p className = 'whatIsLinqText'>An aggregation of various e-commerce avenues onto a unified digitalised platform. Put into perspective, it’s an online super bazaar with an extensive assemblage of retail, travel, health care, insurance, pharmacy, money-transfer, matrimony and various other services under a single roof.As a single point digital platform, we have a string of highly regarded global organizations driving the LINQ ecosystem forward.</p>
+        </div>
+      </div>
+
+
+      {/*
         <MediaQuery query='(min-width: 1224px)'>
         <section className = 'open-a-store-section'>
           <div className="open-a-store-heading-block">
             <h3 className = 'fadeInUp animated'>Open a Store</h3>
-            {/*<hr></hr>*/}
+
             <img className = 'img-responsive ribbonImage' src = './images/OpenStore.png'></img>
             <div className = 'row'>
               <div className = 'col-md-offset-2 col-md-8'>
@@ -64,6 +74,8 @@ class OpenAStore extends React.Component{
             <div className="clearfix"></div>
 
           </div>
+        */}
+        {/*
         </section>
         </MediaQuery>
         <MediaQuery query='(max-width: 1224px)'>
@@ -113,9 +125,11 @@ class OpenAStore extends React.Component{
               </div>
             </div>
           </div>
+          */}
+          {/*
         </section>
         </MediaQuery>
-      </div>
+        */}
       </div>
     );
   }
