@@ -1,0 +1,4 @@
+exports.PRODUCTS = [
+  {name: 'Electronics'},
+
+];
