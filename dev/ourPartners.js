@@ -7,24 +7,24 @@ class OurPartners extends React.Component{
         <div className = 'row'>
           <h1 className = 'ourPartnersHeading'>Our Partners</h1>
           <div className = 'col-md-offset-2 col-md-2 col-xs-12'>
-            <img className = 'img-responsive ourPartnersImg' src = './images/partner1.png'/>
+            <img className = 'img-responsive ourPartnersImg' src = './images/partner11.png'/>
           </div>
           <div className = 'col-md-offset-1 col-md-2 col-xs-12'>
-            <img className = 'img-responsive ourPartnersImg' src = './images/partner2.png'/>
+            <img className = 'img-responsive ourPartnersImg' src = './images/partner22.png'/>
           </div>
           <div className = 'col-md-offset-1 col-md-2 col-xs-12'>
-            <img className = 'img-responsive ourPartnersImg' src = './images/partner3.png'/>
+            <img className = 'img-responsive ourPartnersImg' src = './images/partner33.png'/>
           </div>
         </div>
         <div className = 'row secondRow'>
           <div className = 'col-md-offset-2 col-md-2 col-xs-12'>
-            <img className = 'img-responsive ourPartnersImg via' src = './images/via.png'/>
+            <img className = 'img-responsive ourPartnersImg via' src = './images/via1.png'/>
           </div>
           <div className = 'col-md-offset-1 col-md-2 col-md-3 col-xs-12'>
-            <img className = 'img-responsive ourPartnersImg' src = './images/partner5.png'/>
+            <img className = 'img-responsive ourPartnersImg' src = './images/partner55.png'/>
           </div>
           <div className = 'col-md-offset-1 col-md-2 col-xs-12'>
-            <img className = 'img-responsive ourPartnersImg' src = './images/partner6.png'/>
+            <img className = 'img-responsive ourPartnersImg' src = './images/partner66.png'/>
           </div>
         </div>
       </div>

@@ -26,7 +26,9 @@ class Holder extends React.Component{
         <MainIllustration />
         <WhatIsLinq />
         <OpenAStore />
+        {/*
         <FormLinks />
+        */}
         <FranchiseRequirements />
         <OurPartners />
         <WhyPartner />
