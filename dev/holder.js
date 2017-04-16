@@ -25,10 +25,11 @@ class Holder extends React.Component{
         <NavBarHome />
         <MainIllustration />
         <WhatIsLinq />
+        <OurPartners />
         <OpenAStore />
         <FormLinks />
         <FranchiseRequirements />
-        <OurPartners />
+
         <WhyPartner />
         <Testimonials />
         <Footer />

@@ -31,7 +31,7 @@ class MainIllustration extends React.Component{
 
                 <div className  = 'col-md-offset-7 col-md-5'>
                   <h2 className="logo-name">Transforming<br></br>The Way India Shops</h2>
-                  <Link to="/open-a-store-form" className = 'mainIllustrationLink'><button className = 'form-links-btn' onClick={this.handleClick}> Open A Store </button></Link>
+                  <Link to="/open-a-store-form" className = 'mainIllustrationLink blink blink-infinite'><button className = 'form-links-btn' onClick={this.handleClick}> Start your business today</button></Link>
                 </div>
                 {/*
                 <div className="inner text-center">
