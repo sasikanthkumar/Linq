@@ -29,7 +29,7 @@ class OpenAStore extends React.Component{
         </div>
         <div className="row">
           <div className="col-md-offset-2 col-md-4 col-sm-6">
-            <div className="thumbnail">
+            <div className="thumbnail benfitsOfOpenStoreThumbnail">
               <img src="./images/linq_advan11.svg"  className = 'benfitsOfOpenStoreImg img-responsive'alt="..."/>
               <div className="caption">
                 <h4 className = 'openAStoreCardHeading'>BRAND AMBASSADOR</h4>
@@ -38,7 +38,7 @@ class OpenAStore extends React.Component{
             </div>
           </div>
           <div className="col-md-4 col-sm-6">
-            <div className="thumbnail">
+            <div className="thumbnail benfitsOfOpenStoreThumbnail">
               <img src="./images/linq_advan22.svg"  className = 'benfitsOfOpenStoreImg img-responsive'alt="..."/>
               <div className="caption">
                 <h4 className = 'openAStoreCardHeading'>WIDE RANGE OF PRODUCTS</h4>
@@ -49,7 +49,7 @@ class OpenAStore extends React.Component{
         </div>
         <div className="row">
           <div className="col-md-offset-2 col-md-4 col-sm-6">
-            <div className="thumbnail">
+            <div className="thumbnail benfitsOfOpenStoreThumbnail">
               <img src="./images/linq_advan33.svg"  className = 'benfitsOfOpenStoreImg img-responsive'alt="..."/>
               <div className="caption">
                 <h4 className = 'openAStoreCardHeading'>MINIMAL INVESTMENT</h4>
@@ -58,7 +58,7 @@ class OpenAStore extends React.Component{
             </div>
           </div>
           <div className="col-md-4 col-sm-6">
-            <div className="thumbnail">
+            <div className="thumbnail benfitsOfOpenStoreThumbnail">
               <img src="./images/linq_advan44.svg"  className = 'benfitsOfOpenStoreImg img-responsive'alt="..."/>
               <div className="caption">
                 <h4 className = 'openAStoreCardHeading'>ONE STOP STORE</h4>

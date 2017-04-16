@@ -1,6 +1,28 @@
 import React from 'react';
 import Slider from 'react-slick';
 
+
+function SampleNextArrow(props) {
+  const {className, style, onClick} = props
+  return (
+    <div
+      className={className}
+      onClick={onClick}
+    ><i className="material-icons">keyboard_arrow_right</i></div>
+  );
+}
+
+function SamplePrevArrow(props) {
+  const {className, style, onClick} = props
+  return (
+    <div
+      className={className}
+      onClick={onClick}
+    ><i className="material-icons">keyboard_arrow_left</i></div>
+  );
+}
+
+
 class TestimonialsSlider extends React.Component{
   render(){
     var settings = {
@@ -8,7 +30,11 @@ class TestimonialsSlider extends React.Component{
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 8000,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />
     };
     return(
       <Slider {...settings}>

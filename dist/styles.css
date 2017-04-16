@@ -83,7 +83,11 @@ body{
   text-align: center;
 }
 
-.openAStoreContainer .whatIsLinqHeading, .openAStoreContainer .whatIsLinqText{
+.whyPartner .whatIsLinqHeading{
+  color: #ff9c00;
+}
+
+.openAStoreContainer .whatIsLinqHeading,.testimonialsContainer .whatIsLinqHeading , .openAStoreContainer .whatIsLinqText{
   color: rgb(8, 21, 42);
 }
 
@@ -210,6 +214,10 @@ body{
 .benfitsOfOpenStoreImg{
   width: 100px;
   height: 100px;
+}
+
+.ourPartnersImgThumbnail{
+  width: 150px;
 }
 /*
 .whatIsLinqCard:hover {
@@ -465,6 +473,36 @@ body{
     background-color: #f0f5f9;
 }
 
+@media(max-width:1224px){
+  .ul_social_icons{
+    padding-left: 0px !important;
+  }
+
+  .back_to_top_col{
+    justify-content: center !important;
+  }
+
+  .back_to_top_col p{
+    padding-right: 0px !important;
+  }
+
+  .ul_social_icons{
+      justify-content: center !important;
+      align-items: center !important;
+      align-content: center !important;
+  }
+
+  .linq_logo_footer_col, .linq_tag_line_footer_col{
+    min-height: 0px !important;
+    margin-top: 60px !important;
+  }
+
+  .linq_logo_footer_col img{
+    margin: 0 auto !important;
+  }
+
+}
+
 @media(max-width:767px) {
   .open-a-store-section .time-line .row:before{
 	   right:auto;
@@ -501,14 +539,42 @@ body{
 
   .testimonialsContainer{
     display: none;
+
   }
 
   .navBarTestimonials{
     display: none !important;
   }
 
-  .openAStoreContainer .linqAdvantages{
+  .openAStoreContainer .linqAdvantages, .testimonialsContainer .linqAdvantages{
     border: none !important;
+  }
+
+  .ul_social_icons{
+    padding-left: 0px !important;
+  }
+
+  .back_to_top_col{
+    justify-content: center !important;
+  }
+
+  .back_to_top_col p{
+    padding-right: 0px !important;
+  }
+
+  .ul_social_icons{
+      justify-content: center !important;
+      align-items: center !important;
+      align-content: center !important;
+  }
+
+  .linq_logo_footer_col, .linq_tag_line_footer_col{
+    min-height: 0px !important;
+    margin-top: 60px !important;
+  }
+
+  .linq_logo_footer_col img{
+    margin: 0 auto !important;
   }
 }
 
@@ -566,7 +632,7 @@ body{
 }
 
 .testimonialsContainer{
-  background-color: #f0f5f9;
+  background: #ffd204;;
 }
 
 .testimonials-heading{
@@ -611,7 +677,7 @@ body{
   text-align: center;
 }
 
-.openAStoreContainer .linqAdvantages{
+.openAStoreContainer .linqAdvantages, .testimonialsContainer .linqAdvantages{
   color: #000c28;
   border: 1px solid #000c28;
   display: inline;
@@ -620,6 +686,11 @@ body{
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 24px;
+}
+
+.testimonialsContainer .linqAdvantages{
+  border: none;
+  border-bottom: 1px solid #000c28;
 }
 
 .linqAdvantagesRow{
@@ -649,6 +720,9 @@ body{
     font-size: 16px;
     font-style: normal;
     line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .testimonial p.author {
@@ -670,6 +744,7 @@ body{
     font-size: 13px;
 }
 
+/*
 .testimonial:after {
     position: absolute;
     left: 11%;
@@ -684,7 +759,7 @@ body{
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-
+*/
 .testimonial blockquote {
     border-left: none;
     padding: 0;
@@ -695,6 +770,7 @@ body{
   padding: 30px;
 }
 
+/*
 .testimonial {
   background: #294fb4;
   bottom: 10px;
@@ -702,13 +778,27 @@ body{
   -moz-box-shadow: 0px 18px 71px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 18px 71px -10px rgba(0, 0, 0, 0.75);
 }
+*/
+
+.testimonial {
+  background: transparent;
+  bottom: 10px;
+  border: 2px solid rgb(8, 21, 42);
+  margin-bottom: 10px;
+}
 
 .testimonial p {
+    /*
     color: #fff;
+    */
+    color: rgb(8, 21, 42);
 }
 
 .testimonial p.author cite {
+    /*
     color: rgba(255, 255, 255, 0.7);
+    */
+    color: rgb(8, 21, 42);
 }
 
 .testimonial:after {
@@ -1033,7 +1123,7 @@ input::-webkit-input-placeholder{
 
 
 .footerContainer{
-  background: #1f305f;
+  background: #08152a;
 }
 
 .footerContainer .rights p{
@@ -1473,7 +1563,9 @@ input[type=radio]:focus{
 
 .whyPartner{
     padding: 20px;
-    background: white;
+    background: #2d2e3a;
+    padding-top: 0px;
+    padding-bottom: 60px;
 }
 
 
@@ -1826,8 +1918,13 @@ font-weight: 300;
 
 
 .ourPartnersContainer{
-  background: #f0f5f9;
+  background: #fff;
   padding-bottom: 4em;
+}
+
+.ourPartnersContainer .whatIsLinqHeading{
+  color: rgb(8, 21, 42);
+  padding-bottom: 35px;
 }
 
 .social{
@@ -1902,7 +1999,7 @@ font-weight: 300;
   text-align: center;
 }
 
-.thumbnail{
+.benfitsOfOpenStoreThumbnail{
   display: flex;
   align-items: center;
   background: transparent;
@@ -1963,7 +2060,228 @@ font-weight: 300;
   margin-bottom: 20px;
 }
 
-.thumbnail>img {
+.benfitsOfOpenStoreThumbnail>img {
     margin-right: 0px !important;
     margin-left: 0px !important;
+}
+
+.ourPartnersImgThumbnailDiv{
+  min-height: 150px;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  border-radius: 0px;
+  border-right: 1px solid #ddd;
+  /* background-color: white; */
+  border-bottom: 1px solid #ddd;
+  margin: 30px;
+}
+
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+/*
+.card-1{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+*/
+
+.fromOurPartnersColumn{
+  margin-top: 40px;
+}
+
+.slick-next:before, .slick-prev:before{
+  display: none !important;
+}
+
+.slick-next, .slick-prev{
+  padding-bottom: 50px !important;
+}
+
+.material-icons{
+  color: rgb(8, 21, 42);
+}
+
+.footer_bottom{
+  padding: 45px 0;
+  clear: both;
+  border-top: 2px solid #5d7395;
+  color: #5d7395;
+  font: 700 12px/50px "Raleway", sans-serif;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  overflow: auto;
+}
+
+.ul_social_icons{
+  display: flex;
+  list-style: none;
+}
+
+.li_a_social_icons{
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  transition: .3s;
+  border: 2px solid #5d7395;
+  border-radius: 50%;
+  background: transparent;
+  text-indent: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.li_a_social_icons img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 20px;
+  max-height: 20px;
+  transform: translate(-50%, -50%);
+}
+
+.li_a_social_icons:hover{
+  transition: .2s;
+  border-color: #3eb8cc;
+  background: #3eb8cc;
+  color: #3eb8cc;
+}
+
+.copyrights_col p{
+  margin-bottom: 0px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+
+.back_to_top_col p a{
+  color: #ffd204;
+  transition: .2s;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.back_to_top_col p{
+  text-align: right;
+  padding-right: 45px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.back_to_top_col p a:hover{
+  color: #fff;
+}
+
+.back_to_top_col{
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+    justify-content: flex-end;
+}
+
+.copyrights_col{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+}
+
+.li_social_icons_last a{
+  margin-right: 0px;
+}
+
+
+.linq_logo_footer_col img{
+  width: 100px;
+  margin-left: 40px;
+}
+
+.linq_logo_footer_col{
+  display: flex;
+  align-content: center;
+  align-items: center;
+
+}
+
+.linq_tag_line_footer_col{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.linq_tag_line_footer_col p{
+  font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+
+.linq_useful_links_footer_col h2{
+  position: relative;
+  color: #fff;
+  font: 700 14px/30px "Raleway", sans-serif;
+  cursor: default;
+  letter-spacing: .05em;
+}
+
+.linq_useful_links_footer_col ul{
+  margin: 0 0 10px;
+  margin-bottom: 40px;
+
+  font: 12px/40px "Raleway", sans-serif;
+  letter-spacing: .05em;
+  list-style: none;
+  padding-left: 0px;
+  text-transform: uppercase;
+}
+
+.linq_useful_links_footer_col ul li{
+  height: auto;
+
+  transition: .2s;
+  overflow: hidden;
+}
+
+
+.linq_useful_links_footer_col ul li a{
+  display: block;
+  transition: .3s;
+  border-bottom: 1px solid #202d42;
+  color: #5d7395;
+  text-decoration: none;
+}
+
+.linq_useful_links_footer_col ul li a:hover{
+  color: #3eb8cc;
+  cursor: pointer;
+
+}
+
+.linq_logo_footer_col, .linq_tag_line_footer_col{
+  min-height: 350px;
+
 }

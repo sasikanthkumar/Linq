@@ -7,18 +7,18 @@ class Testimonials extends React.Component{
     return(
       <div className = 'container-fluid testimonialsContainer'>
         <div className = 'row'>
-          <div className="col-md-8 col-md-offset-2 text-left testimonials-heading fadeInUp animated">
-            {/*<span>You deserved happiness</span>*/}
-            <h2>Testimonials</h2>
-            <p className = 'testmonialsFromOurPartners'>From Our Partners</p>
-            {/*<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>*/}
+          <div className = 'col-md-12'>
+            <h2 className = 'whatIsLinqHeading'>Testimonials</h2>
           </div>
         </div>
         {/*
-        <TestimonialTabs/>
+        <div className = 'row linqAdvantagesRow'>
+          <div className = 'col-md-12 fromOurPartnersColumn'>
+            <h3 className = 'linqAdvantages'>From Our Partners</h3>
+          </div>
+        </div>
         */}
         <TestimonialsSlider/>
-
       </div>
     );
   }
