@@ -30,7 +30,7 @@ class OpenAStore extends React.Component{
         <div className="row">
           <div className="col-md-offset-2 col-md-4 col-sm-6">
             <div className="thumbnail benfitsOfOpenStoreThumbnail">
-              <img src="./images/linq_advan11.svg"  className = 'benfitsOfOpenStoreImg img-responsive'alt="..."/>
+              <img src="./images/BrandAmbassador.svg"  className = 'benfitsOfOpenStoreImg img-responsive'alt="..."/>
               <div className="caption">
                 <h4 className = 'openAStoreCardHeading'>BRAND AMBASSADOR</h4>
                 <p className = 'whatIsLinqCardText openAStoreCardText'>Be the brand ambassador of globally acclaimed top notch online firms</p>
@@ -39,7 +39,7 @@ class OpenAStore extends React.Component{
           </div>
           <div className="col-md-4 col-sm-6">
             <div className="thumbnail benfitsOfOpenStoreThumbnail">
-              <img src="./images/linq_advan22.svg"  className = 'benfitsOfOpenStoreImg img-responsive'alt="..."/>
+              <img src="./images/products.svg"  className = 'benfitsOfOpenStoreImg img-responsive'alt="..."/>
               <div className="caption">
                 <h4 className = 'openAStoreCardHeading'>WIDE RANGE OF PRODUCTS</h4>
                 <p className = 'whatIsLinqCardText openAStoreCardText'>Sell a wide range of products from a multitude of services</p>
@@ -50,7 +50,7 @@ class OpenAStore extends React.Component{
         <div className="row">
           <div className="col-md-offset-2 col-md-4 col-sm-6">
             <div className="thumbnail benfitsOfOpenStoreThumbnail">
-              <img src="./images/linq_advan33.svg"  className = 'benfitsOfOpenStoreImg img-responsive'alt="..."/>
+              <img src="./images/minimalInvestment.svg"  className = 'benfitsOfOpenStoreImg img-responsive'alt="..."/>
               <div className="caption">
                 <h4 className = 'openAStoreCardHeading'>MINIMAL INVESTMENT</h4>
                 <p className = 'whatIsLinqCardText openAStoreCardText'>Get your business running with a minimal investment and a zero stock risk</p>
@@ -59,7 +59,7 @@ class OpenAStore extends React.Component{
           </div>
           <div className="col-md-4 col-sm-6">
             <div className="thumbnail benfitsOfOpenStoreThumbnail">
-              <img src="./images/linq_advan44.svg"  className = 'benfitsOfOpenStoreImg img-responsive'alt="..."/>
+              <img src="./images/oneStopStore.svg"  className = 'benfitsOfOpenStoreImg img-responsive'alt="..."/>
               <div className="caption">
                 <h4 className = 'openAStoreCardHeading'>ONE STOP STORE</h4>
                 <p className = 'whatIsLinqCardText openAStoreCardText'>Be that “One stop digital store” in your town</p>

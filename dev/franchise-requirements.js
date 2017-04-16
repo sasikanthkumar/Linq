@@ -14,7 +14,7 @@ class FranchiseRequirements extends React.Component{
             <div className = 'col-md-offset-2 col-md-4 col-sm-6 '>
               <div className = 'franchiseReqDiv'>
                 <span className="icon">
-  							    <img src = './images/linq_advan111.svg' className = 'img-responsive franchiseReqImg'></img>
+  							    <img src = './images/Investment.svg' className = 'img-responsive franchiseReqImg'></img>
   						  </span>
                 <p>An investment of INR 2 Lakhs to get the store up and running. The investment may vary from store to store based on demographics.</p>
               </div>
@@ -22,7 +22,7 @@ class FranchiseRequirements extends React.Component{
             <div className = 'col-md-4 col-sm-6 '>
               <div className = 'franchiseReqDiv'>
                 <span className="icon">
-                  <img src = './images/linq_advan222.svg' className = 'img-responsive franchiseReqImg'></img>
+                  <img src = './images/Location.svg' className = 'img-responsive franchiseReqImg'></img>
                 </span>
                 <p>A minimum of 150 square feet (up to 300square feet) in a business favourable locality.</p>
               </div>
@@ -32,7 +32,7 @@ class FranchiseRequirements extends React.Component{
             <div className = 'col-md-offset-2 col-md-4 col-sm-6 '>
               <div className = 'franchiseReqDiv'>
                 <span className="icon">
-                  <img src = './images/linq_advan333.svg' className = 'img-responsive franchiseReqImg'></img>
+                  <img src = './images/computerKnowledge.svg' className = 'img-responsive franchiseReqImg'></img>
                 </span>
                 <p>Passionate and self-driven individuals with an essential knowledge of the internet.</p>
               </div>
@@ -40,7 +40,7 @@ class FranchiseRequirements extends React.Component{
             <div className = 'col-md-4 col-sm-6 '>
               <div className = 'franchiseReqDiv'>
                 <span className="icon">
-                  <img src = './images/linq_advan444.svg' className = 'img-responsive franchiseReqImg'></img>
+                  <img src = './images/Manager.svg' className = 'img-responsive franchiseReqImg'></img>
                 </span>
                 <p>Commitment to personally manage the day-day operations at LinQ store and be able to deliver an exceptional customer experience.</p>
               </div>

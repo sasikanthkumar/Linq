@@ -21,7 +21,7 @@ class WhatIsLinq extends React.Component{
 					  <div className = 'whatIsLinqCard fadeInUp animated'>
 
               <span className="icon">
-							       <img src = './images/linq_advan1.svg' className = 'img-responsive linqAdvanImg'></img>
+							       <img src = './images/Aggregate.svg' className = 'img-responsive linqAdvanImg'></img>
 						  </span>
               <h4 className = 'whatIsLinqCardHeading'>EXTENSIVE SERVICES</h4>
               <p className = 'whatIsLinqCardText'>We aggregate a wide range of internet services into a unified digital offline store.</p>
@@ -30,7 +30,7 @@ class WhatIsLinq extends React.Component{
           <div className="col-md-3 col-sm-6">
 					  <div className = 'whatIsLinqCard  fadeInUp animated'>
               <span className="icon">
-                <img src = './images/linq_advan2.svg' className = 'img-responsive linqAdvanImg'></img>
+                <img src = './images/ValueforMoney.svg' className = 'img-responsive linqAdvanImg'></img>
               </span>
               <h4 className = 'whatIsLinqCardHeading'>VALUE FOR MONEY</h4>
               <p className = 'whatIsLinqCardText'>At LinQ stores, we empower customers to make an informed choice thus entitling them to the best possible unparalleled deals on products.</p>
@@ -39,7 +39,7 @@ class WhatIsLinq extends React.Component{
           <div className=" col-md-3 col-sm-6">
 					  <div className = 'whatIsLinqCard  fadeInUp animated'>
               <span className="icon">
-                <img src = './images/linq_advan3.svg' className = 'img-responsive linqAdvanImg'></img>
+                <img src = './images/Assistance.svg' className = 'img-responsive linqAdvanImg'></img>
               </span>
               <h4 className = 'whatIsLinqCardHeading'>FREE & TRUSTED ASSISTANCE</h4>
               <p className = 'whatIsLinqCardText'>We ease out the process for the buyer, by placing an order and having it procured, “free of charge”.</p>
@@ -48,7 +48,7 @@ class WhatIsLinq extends React.Component{
           <div className="col-md-3 col-sm-6">
             <div className = 'whatIsLinqCard fadeInUp animated'>
               <span className="icon">
-                <img src = './images/linq_advan4.svg' className = 'img-responsive linqAdvanImg'></img>
+                <img src = './images/HassleFreereturns.svg' className = 'img-responsive linqAdvanImg'></img>
               </span>
               <h4 className = 'whatIsLinqCardHeading'>HASSLE FREE RETURNS</h4>
               <p className = 'whatIsLinqCardText'>LinQ renders a simple and hassle free return policy at no additional cost.</p>
