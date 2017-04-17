@@ -6,29 +6,27 @@ class WhatIsLinq extends React.Component{
     return(
       <div className = 'container-fluid whatIsLinqContainer'>
         <div className = 'row rowPaddingBtm'>
-          <div className = 'col-md-8 col-md-offset-2 fadeInUp animated'>
+          <div className = 'col-md-8 col-md-offset-2'>
             {/*<Link to="/partner-with-us-form" ><button className = 'form-links-btn' onClick={this.handleClick}> Partner With Us </button></Link>*/}
-
-            <h2 className = 'whatIsLinqHeading'>What Is Linq?</h2>
-            <p className = 'whatIsLinqText'>An aggregation of various e-commerce avenues onto a unified digitalised platform. Put into perspective, it’s an online super bazaar with an extensive assemblage of retail, travel, health care, insurance, pharmacy, money-transfer, matrimony and various other services under a single roof.As a single point digital platform, we have a string of highly regarded global organizations driving the LINQ ecosystem forward.</p>
+            <h2 className = 'whatIsLinqHeading animated'>What Is Linq?</h2>
+            <p className = 'whatIsLinqText animated'>An aggregation of various e-commerce avenues onto a unified digitalised platform. Put into perspective, it’s an online super bazaar with an extensive assemblage of retail, travel, health care, insurance, pharmacy, money-transfer, matrimony and various other services under a single roof.As a single point digital platform, we have a string of highly regarded global organizations driving the LINQ ecosystem forward.</p>
           </div>
         </div>
         <div className = 'row'>
           <div className = 'col-md-12'>
-            <h3 className = 'linqAdvantages'>LinQ Advantages</h3>
+            <h3 className = 'linqAdvantages animated' id = 'linqAdvantagesId'>LinQ Advantages</h3>
           </div>
           <div className="col-md-3 col-sm-6">
-					  <div className = 'whatIsLinqCard fadeInUp animated'>
-
+					  <div className = 'whatIsLinqCard animated'>
               <span className="icon">
-							       <img src = './images/Aggregate.svg' className = 'img-responsive linqAdvanImg'></img>
+							   <img src = './images/Aggregate.svg' className = 'img-responsive linqAdvanImg'></img>
 						  </span>
               <h4 className = 'whatIsLinqCardHeading'>EXTENSIVE SERVICES</h4>
               <p className = 'whatIsLinqCardText'>We aggregate a wide range of internet services into a unified digital offline store.</p>
             </div>
 				  </div>
           <div className="col-md-3 col-sm-6">
-					  <div className = 'whatIsLinqCard  fadeInUp animated'>
+					  <div className = 'whatIsLinqCard animated'>
               <span className="icon">
                 <img src = './images/ValueforMoney.svg' className = 'img-responsive linqAdvanImg'></img>
               </span>
@@ -37,7 +35,7 @@ class WhatIsLinq extends React.Component{
             </div>
 				  </div>
           <div className=" col-md-3 col-sm-6">
-					  <div className = 'whatIsLinqCard  fadeInUp animated'>
+					  <div className = 'whatIsLinqCard animated'>
               <span className="icon">
                 <img src = './images/Assistance.svg' className = 'img-responsive linqAdvanImg'></img>
               </span>
@@ -46,7 +44,7 @@ class WhatIsLinq extends React.Component{
             </div>
 				  </div>
           <div className="col-md-3 col-sm-6">
-            <div className = 'whatIsLinqCard fadeInUp animated'>
+            <div className = 'whatIsLinqCard animated'>
               <span className="icon">
                 <img src = './images/HassleFreereturns.svg' className = 'img-responsive linqAdvanImg'></img>
               </span>
