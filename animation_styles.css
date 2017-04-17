@@ -1,6 +1,22 @@
-.whatIsLinqContainer .whatIsLinqHeading, #linqAdvantagesId, .whatIsLinqContainer .whatIsLinqCard, .whatIsLinqContainer .whatIsLinqText {
+.whatIsLinqContainer .whatIsLinqHeading,
+#linqAdvantagesId,
+.whatIsLinqContainer .whatIsLinqCard,
+.whatIsLinqContainer .whatIsLinqText,
+.benfitsOfOpenStoreThumbnailRight,
+.benfitsOfOpenStoreThumbnailLeft,
+.openAStoreContainer .openAStoreText,
+#benefitsOfOpeningStore,
+#open-a-store-heading {
   -webkit-animation-duration: 1.5s;
   -webkit-animation-delay: 0s;
   -moz-animation-duration: 1.5s;
   -moz-animation-delay: 0s;
+}
+
+.benfitsOfOpenStoreThumbnailRightSec,
+.benfitsOfOpenStoreThumbnailLeftSec{
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-delay: 0.25s;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-delay: 0.25s;
 }
