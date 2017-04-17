@@ -576,6 +576,18 @@ body{
   .linq_logo_footer_col img{
     margin: 0 auto !important;
   }
+
+  .franchiseReqDivSec{
+    margin-top: 60px !important;
+  }
+
+  .franchiseReqDivFir{
+    margin-top: 40px !important;
+  }
+
+  .franchiseReqRowSec{
+    margin-top: 0px !important;
+  }
 }
 
 .franchiseRequirementsContainer{
@@ -2006,6 +2018,10 @@ font-weight: 300;
   border: none;
 }
 
+.benfitsOfOpenStoreThumbnail .caption{
+  padding-left: 20px !important;
+}
+
 .franchiseRequirementsHeading{
   padding-top: 100px;
   font-size: 24px;
@@ -2053,11 +2069,24 @@ font-weight: 300;
   margin-right: 10px;
 }
 
+
+/*
 .franchiseReqImg{
   width: 60px;
   margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 20px;
+}
+
+*/
+
+.franchiseReqImg{
+  width: 80px;
+  margin: 0 auto;
+  margin-top: -50px;
+  margin-bottom: 20px;
+  background: #2d2e3a;
+  padding: 10px;
 }
 
 .benfitsOfOpenStoreThumbnail>img {
@@ -2283,5 +2312,9 @@ font-weight: 300;
 
 .linq_logo_footer_col, .linq_tag_line_footer_col{
   min-height: 350px;
+}
 
+
+.franchiseReqRowSec{
+  margin-top: 20px;
 }
