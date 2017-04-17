@@ -12,7 +12,7 @@ class FranchiseRequirements extends React.Component{
           </div>
           <div className = 'row'>
             <div className = 'col-md-offset-2 col-md-4 col-sm-6 '>
-              <div className = 'franchiseReqDiv'>
+              <div className = 'franchiseReqDiv franchiseReqDivFir'>
                 <span className="icon">
   							    <img src = './images/Investment.svg' className = 'img-responsive franchiseReqImg'></img>
   						  </span>
@@ -20,7 +20,7 @@ class FranchiseRequirements extends React.Component{
               </div>
             </div>
             <div className = 'col-md-4 col-sm-6 '>
-              <div className = 'franchiseReqDiv'>
+              <div className = 'franchiseReqDiv franchiseReqDivSec'>
                 <span className="icon">
                   <img src = './images/Location.svg' className = 'img-responsive franchiseReqImg'></img>
                 </span>
@@ -28,9 +28,9 @@ class FranchiseRequirements extends React.Component{
               </div>
             </div>
           </div>
-          <div className = 'row'>
+          <div className = 'row franchiseReqRowSec'>
             <div className = 'col-md-offset-2 col-md-4 col-sm-6 '>
-              <div className = 'franchiseReqDiv'>
+              <div className = 'franchiseReqDiv franchiseReqDivFir'>
                 <span className="icon">
                   <img src = './images/computerKnowledge.svg' className = 'img-responsive franchiseReqImg'></img>
                 </span>
@@ -38,7 +38,7 @@ class FranchiseRequirements extends React.Component{
               </div>
             </div>
             <div className = 'col-md-4 col-sm-6 '>
-              <div className = 'franchiseReqDiv'>
+              <div className = 'franchiseReqDiv franchiseReqDivSec'>
                 <span className="icon">
                   <img src = './images/Manager.svg' className = 'img-responsive franchiseReqImg'></img>
                 </span>

@@ -1,6 +1,7 @@
 import React from 'react';
 import MediaQuery from 'react-responsive';
 
+
 class OpenAStore extends React.Component{
   render(){
     return(
@@ -14,9 +15,10 @@ class OpenAStore extends React.Component{
             <p className = 'whatIsLinqText'>Our extensive partner base puts LinQ stores at a strategic advantage by helping us propel the market offerings and extending the services to people across every nook and corner.</p>
           </div>
           */}
-          <div className = 'col-md-12'>
-            <h2 className = 'whatIsLinqHeading'>Open a Store</h2>
+          <div className = 'col-md-12'  >
+            <h2 className = 'whatIsLinqHeading animated' id = 'element-to-animate'>Open a Store</h2>
           </div>
+
           <div className = 'col-md-offset-2 col-md-8'>
             <p className = 'whatIsLinqText'>Our extensive partner base puts LinQ stores at a strategic advantage by helping us propel the market offerings and extending the services to people across every nook and corner.</p>
           </div>
