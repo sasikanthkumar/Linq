@@ -8,7 +8,7 @@ class Testimonials extends React.Component{
       <div className = 'container-fluid testimonialsContainer'>
         <div className = 'row'>
           <div className = 'col-md-12'>
-            <h2 className = 'whatIsLinqHeading'>Testimonials</h2>
+            <h2 className = 'whatIsLinqHeading animated'>Testimonials</h2>
           </div>
         </div>
         {/*

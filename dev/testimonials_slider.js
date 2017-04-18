@@ -39,7 +39,7 @@ class TestimonialsSlider extends React.Component{
     return(
       <Slider {...settings}>
         <div>
-          <div className="testimonial">
+          <div className="testimonial animated testimonialAnim">
             <blockquote>
               <p>“LinQ store offers a huge variety with a very minimal investment. My own store in Tiruvuru started off in May 2016, and we have been earning above 60,000/- per month since then. Through the success that the store has gained we have a lot of customers visiting our store often to avail the best of deals. People here trust the fact that no other store in town would match up to the unparalled prices and quality that a LinQ store offers. The constant support and encouragement that we receive from the LinQ team is unmatchable and helps us focus solely on the task at hand.”</p>
               <p className="author"> {/*<img src="./images/person1.jpg" alt="Free HTML5 Bootstrap Template by gettemplates.co"/>*/} <cite>— Sravanti(Tiruvuru)</cite></p>

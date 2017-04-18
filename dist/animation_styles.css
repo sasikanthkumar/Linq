@@ -34,6 +34,7 @@
 .openAStoreContainer .openAStoreText,
 .whatIsLinqContainer .whatIsLinqText,
 #open-a-store-heading,
+.testimonialAnim,
 .whatIsLinqContainer .whatIsLinqHeading,
 .ourPartnersContainer .whatIsLinqHeading{
   -webkit-animation-duration: 4s;
@@ -66,7 +67,8 @@
 }
 
 .whyPartner .whatIsLinqHeading,
-.whyPartner .whatIsLinqText{
+.whyPartner .whatIsLinqText,
+.testimonialsContainer .whatIsLinqHeading{
   -webkit-animation-duration: 2s !important;
   -moz-animation-duration: 2s !important;
   animation-duration: 2s !important;
