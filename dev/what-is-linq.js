@@ -52,7 +52,6 @@ class WhatIsLinq extends React.Component{
               <p className = 'whatIsLinqCardText'>LinQ renders a simple and hassle free return policy at no additional cost.</p>
             </div>
           </div>
-
         </div>
       </div>
     );

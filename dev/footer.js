@@ -56,8 +56,9 @@ class Footer extends React.Component{
             <div className = 'col-md-4 col-sm-12 linq_logo_footer_col'>
               <img src ='./images/LinqLogo.svg' className = 'img-responsive' ></img>
             </div>
-            <div className = 'col-md-4 col-sm-12 linq_tag_line_footer_col '>
-              <p>Transforming <br></br>The Way India <br></br>Shops</p>
+            <div className = 'col-md-4 col-sm-12 linq_tag_line_footer_col'>
+              {/*<p>Transforming <br></br>The Way India <br></br>Shops</p>*/}
+              <div id="my-div"></div>
             </div>
 
             <div className = 'col-md-offset-1 col-md-2  col-sm-12 linq_useful_links_footer_col'>
