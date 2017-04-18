@@ -8,8 +8,8 @@ class WhyPartner extends React.Component{
       <div className = 'container-fluid whyPartner'>
         <div className="row rowPaddingBtm">
           <div className="col-md-8 col-md-offset-2 fadeInUp animated">
-            <h2 className="whatIsLinqHeading">Why Partner?</h2>
-            <p className="whatIsLinqText">We form a close knit network with all our associate partners. The professional rapport which we share with our collaborators entitles us in rendering specialized e-commerce solutions to people across varied demographics through our assisted digital stores.</p>
+            <h2 className="whatIsLinqHeading animated">Why Partner?</h2>
+            <p className="whatIsLinqText animated">We form a close knit network with all our associate partners. The professional rapport which we share with our collaborators entitles us in rendering specialized e-commerce solutions to people across varied demographics through our assisted digital stores.</p>
           </div>
         </div>
         {/*

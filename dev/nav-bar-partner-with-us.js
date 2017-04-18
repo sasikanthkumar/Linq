@@ -19,7 +19,7 @@ class NavBarPartnerWithUs extends React.Component {
   }
 
   handleOurPartnersClick(e){
-    scrollToElement('.ourPartners',{
+    scrollToElement('.ourPartnersContainer',{
       offset: -60,
     });
   }

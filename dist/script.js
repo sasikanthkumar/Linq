@@ -23,6 +23,7 @@ $(document).ready(function(){
   // hide our element on page load
   $('.whatIsLinqContainer .whatIsLinqHeading').css('opacity', 0);
   $('.ourPartnersContainer .whatIsLinqHeading').css('opacity', 0);
+  $('.whyPartner .whatIsLinqText').css('opacity', 0);
 
 
   //$('#linqAdvantagesId').css('opacity', 0);
@@ -45,6 +46,11 @@ $(document).ready(function(){
 
   $('.whatIsLinqContainer .whatIsLinqHeading').waypoint(function() {
       $('.whatIsLinqContainer .whatIsLinqHeading').addClass('fadeIn');
+  }, { offset: '100%' });
+
+
+  $('.whyPartner .whatIsLinqText').waypoint(function() {
+      $('.whyPartner .whatIsLinqText').addClass('fadeInUp');
   }, { offset: '100%' });
 
   $('.ourPartnersContainer .whatIsLinqHeading').waypoint(function() {
@@ -73,6 +79,10 @@ $(document).ready(function(){
 
   $('.franchiseRequirementsHeading').waypoint(function() {
       $('.franchiseRequirementsHeading').addClass('zoomIn');
+  }, { offset: '100%' });
+
+  $('.whyPartner .whatIsLinqHeading').waypoint(function() {
+      $('.whyPartner .whatIsLinqHeading').addClass('zoomIn');
   }, { offset: '100%' });
 
   $('#linqAdvantagesId').waypoint(function() {
