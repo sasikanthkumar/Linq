@@ -12,11 +12,16 @@ $(document).ready(function(){
     });
 });
 
-$('ul.nav li.dropdown').hover(function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn(100);
-}, function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut(100);
-});
+if (document.documentElement.clientWidth >= 768) {
+  console.log(document.documentElement.clientWidth);
+  $('ul.nav li.dropdown').hover(function() {
+    $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn(100);
+  }, function() {
+    $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut(100);
+  });
+}
+
+
 
 
 $(document).ready(function(){
