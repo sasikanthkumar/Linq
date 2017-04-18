@@ -22,11 +22,16 @@ $('ul.nav li.dropdown').hover(function() {
 $(document).ready(function(){
   // hide our element on page load
   $('.whatIsLinqContainer .whatIsLinqHeading').css('opacity', 0);
+  $('.ourPartnersContainer .whatIsLinqHeading').css('opacity', 0);
+
+
   //$('#linqAdvantagesId').css('opacity', 0);
   //$('#benefitsOfOpeningStore').css('opacity', 0);
 
   $('.whatIsLinqContainer .whatIsLinqCard').css('opacity', 0);
   $('.whatIsLinqContainer .whatIsLinqText').css('opacity', 0);
+  $('.ourPartnersContainer .rowOne').css('opacity', 0);
+  $('.ourPartnersContainer .rowTwo').css('opacity', 0);
 
   $('.openAStoreContainer .openAStoreText').css('opacity', 0);
   $('.benfitsOfOpenStoreThumbnailLeft').css('opacity', 0);
@@ -40,6 +45,10 @@ $(document).ready(function(){
 
   $('.whatIsLinqContainer .whatIsLinqHeading').waypoint(function() {
       $('.whatIsLinqContainer .whatIsLinqHeading').addClass('fadeIn');
+  }, { offset: '100%' });
+
+  $('.ourPartnersContainer .whatIsLinqHeading').waypoint(function() {
+      $('.ourPartnersContainer .whatIsLinqHeading').addClass('fadeIn');
   }, { offset: '100%' });
 
   $('.franchiseReqAnim').waypoint(function() {
@@ -72,6 +81,14 @@ $(document).ready(function(){
 
   $('.whatIsLinqContainer .whatIsLinqCard').waypoint(function() {
       $('.whatIsLinqContainer .whatIsLinqCard').addClass('fadeInUp');
+  }, { offset: '100%' });
+
+  $('.ourPartnersContainer .rowOne').waypoint(function() {
+      $('.ourPartnersContainer .rowOne').addClass('fadeInUp');
+  }, { offset: '100%' });
+
+  $('.ourPartnersContainer .rowTwo').waypoint(function() {
+      $('.ourPartnersContainer .rowTwo').addClass('fadeInUp');
   }, { offset: '100%' });
 
   $('.benfitsOfOpenStoreThumbnailRight').waypoint(function() {

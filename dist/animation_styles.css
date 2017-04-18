@@ -9,7 +9,8 @@
 }
 
 .benfitsOfOpenStoreThumbnailRight,
-.benfitsOfOpenStoreThumbnailLeft{
+.benfitsOfOpenStoreThumbnailLeft,
+.ourPartnersContainer .rowOne{
   -webkit-animation-duration: 2s;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
@@ -20,7 +21,8 @@
 
 
 .benfitsOfOpenStoreThumbnailRightSec,
-.benfitsOfOpenStoreThumbnailLeftSec{
+.benfitsOfOpenStoreThumbnailLeftSec,
+.ourPartnersContainer .rowTwo{
   -webkit-animation-duration: 2s;
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
@@ -32,7 +34,8 @@
 .openAStoreContainer .openAStoreText,
 .whatIsLinqContainer .whatIsLinqText,
 #open-a-store-heading,
-.whatIsLinqContainer .whatIsLinqHeading{
+.whatIsLinqContainer .whatIsLinqHeading,
+.ourPartnersContainer .whatIsLinqHeading{
   -webkit-animation-duration: 4s;
   -webkit-animation-delay: 0.25s;
   -moz-animation-duration: 4s;
@@ -40,6 +43,23 @@
   animation-duration: 4s !important;
 }
 
+/*
+.ourPartnersContainer .rowOne{
+  -webkit-animation-duration: 4s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-duration: 4s;
+  -moz-animation-delay: 1s;
+  animation-duration: 4s !important;
+}
+
+.ourPartnersContainer .rowTwo{
+  -webkit-animation-duration: 4s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-duration: 4s;
+  -moz-animation-delay: 0s;
+  animation-duration: 4s !important;
+}
+*/
 
 #benefitsOfOpeningStore, #open-a-store-heading, .franchiseRequirementsHeading{
   animation-duration: 3s !important;
