@@ -1,22 +1,54 @@
-.whatIsLinqContainer .whatIsLinqHeading,
+
 #linqAdvantagesId,
 .whatIsLinqContainer .whatIsLinqCard,
-.whatIsLinqContainer .whatIsLinqText,
-.benfitsOfOpenStoreThumbnailRight,
-.benfitsOfOpenStoreThumbnailLeft,
-.openAStoreContainer .openAStoreText,
-#benefitsOfOpeningStore,
-#open-a-store-heading {
+#benefitsOfOpeningStore{
   -webkit-animation-duration: 1.5s;
   -webkit-animation-delay: 0s;
   -moz-animation-duration: 1.5s;
   -moz-animation-delay: 0s;
 }
 
+.benfitsOfOpenStoreThumbnailRight,
+.benfitsOfOpenStoreThumbnailLeft{
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -moz-animation-duration: 2s;
+  -moz-animation-delay: 0s;
+  animation-duration:2s !important;
+}
+
+
 .benfitsOfOpenStoreThumbnailRightSec,
 .benfitsOfOpenStoreThumbnailLeftSec{
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -moz-animation-duration: 2s;
+  -moz-animation-delay: 0.5s;
+  animation-duration:2s !important;
+}
+
+.openAStoreContainer .openAStoreText,
+.whatIsLinqContainer .whatIsLinqText,
+#open-a-store-heading,
+.whatIsLinqContainer .whatIsLinqHeading{
+  -webkit-animation-duration: 4s;
   -webkit-animation-delay: 0.25s;
-  -moz-animation-duration: 1.5s;
+  -moz-animation-duration: 4s;
   -moz-animation-delay: 0.25s;
+  animation-duration: 4s !important;
+}
+
+
+#benefitsOfOpeningStore, #open-a-store-heading, .franchiseRequirementsHeading{
+  animation-duration: 3s !important;
+}
+
+.franchiseReqAnim{
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-duration: 5s;
+  -moz-animation-delay: 0s;
+  animation-duration: 5s !important;
 }
