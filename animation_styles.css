@@ -65,6 +65,14 @@
   animation-duration: 3s !important;
 }
 
+.whyPartner .whatIsLinqHeading,
+.whyPartner .whatIsLinqText{
+  -webkit-animation-duration: 2s !important;
+  -moz-animation-duration: 2s !important;
+  animation-duration: 2s !important;
+
+}
+
 .franchiseReqAnim{
   -webkit-animation-duration: 5s;
   -webkit-animation-delay: 0s;
