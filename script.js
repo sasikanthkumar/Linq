@@ -41,11 +41,17 @@ $(document).ready(function(){
   $('.benfitsOfOpenStoreThumbnailRightSec').css('opacity', 0);
   $('#open-a-store-heading').css('opacity', 0);
   $('.franchiseReqAnim').css('opacity', 0);
+  $('.testimonialAnim').css('opacity', 0);
+
 
 
 
   $('.whatIsLinqContainer .whatIsLinqHeading').waypoint(function() {
       $('.whatIsLinqContainer .whatIsLinqHeading').addClass('fadeIn');
+  }, { offset: '100%' });
+
+  $('.testimonialAnim').waypoint(function() {
+      $('.testimonialAnim').addClass('fadeIn');
   }, { offset: '100%' });
 
 
@@ -83,6 +89,10 @@ $(document).ready(function(){
 
   $('.whyPartner .whatIsLinqHeading').waypoint(function() {
       $('.whyPartner .whatIsLinqHeading').addClass('zoomIn');
+  }, { offset: '100%' });
+
+  $('.testimonialsContainer .whatIsLinqHeading').waypoint(function() {
+      $('.testimonialsContainer .whatIsLinqHeading').addClass('zoomIn');
   }, { offset: '100%' });
 
   $('#linqAdvantagesId').waypoint(function() {
