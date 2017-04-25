@@ -1941,7 +1941,7 @@ font-weight: 300;
   padding-bottom: 4em;
 }
 
-.ourPartnersContainer .whatIsLinqHeading{
+.ourPartnersContainer .whatIsLinqHeading, .blogContainer .whatIsLinqHeading{
   color: rgb(8, 21, 42);
   padding-bottom: 35px;
 }
@@ -2411,4 +2411,71 @@ font-weight: 300;
 
 #my-div{
   width: 400px !important;
+}
+
+
+/** blog card **/
+.blog-card{
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 1rem;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.blog-card img{
+  width: 90%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+}
+
+.blog-card-heading{
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #121c26;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: left;
+}
+
+.blog-card-text{
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #5d6165;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: left;
+  line-height: 1.5em;
+  height: 6em;
+  overflow: hidden;
+}
+
+.blogCardsRow{
+  margin: 40px;
+}
+
+.blog-read-more-btn{
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  border: none;
+  background: #08152a;
+  color: white;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.blog-read-more-btn-div{
+  text-align: left;
+  margin: 5%;
+
 }
