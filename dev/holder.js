@@ -12,6 +12,7 @@ import ModalTest2 from './ModalTest2';
 import GalleryImgs from './galleryImgs';
 import WhyPartner from './whyPartner';
 import OurPartners from './ourPartners';
+import LatestFromOurBlog from './latest-from-our-blog';
 
 class Holder extends React.Component{
 
@@ -33,6 +34,7 @@ class Holder extends React.Component{
         <OurPartners />
         <WhyPartner />
         <Testimonials />
+        <LatestFromOurBlog />
         <Footer />
       </div>
     );
