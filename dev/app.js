@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Holder from './holder';
 import {
-  BrowserRouter as Router,
+  Switch,
+  HashRouter,
   Route,
   Link
 } from 'react-router-dom';
@@ -15,15 +16,15 @@ import CareersHolder from './careers-holder';
 import ContactUs from './contactUs';
 
 ReactDOM.render(
-    <Router onUpdate={() => $(window).scrollTo(0, 0)} history={browserHistory} >
-      <div>
+    <HashRouter  >
+      <Switch>
         <Route exact path="/" component={Holder} />
         <Route path = "/open-a-store-form" component = {FormOpenStoreHolder} />
         <Route path = "/partner-with-us-form" component = {FormPartnerWithUsHolder} />
         <Route path = "/gallery" component = {GalleryHolder} />
         <Route path = "/careers" component = {CareersHolder} />
         <Route path = "/contactUs" component = {ContactUs} />
-      </div>
-    </Router>,
+      </Switch>
+    </HashRouter>,
     document.querySelector('.root')
 );
