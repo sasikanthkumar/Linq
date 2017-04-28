@@ -45,39 +45,45 @@
   </head>
   <body >
     <div class="root"></div>
+
+    <script>
+      function startFooterSVG(){
+        var d = 1;
+        var v = new Vivus('my-div', {duration: 200, file: './images/drawText.svg',start: 'manual',speed:300},function(c){
+    	  d *= -1;
+        if(d == 1){
+        	setTimeout(function(){
+            v.play(d)
+          },200);
+        }else{
+          v.play(d);
+        }});
+        v.play(d);
+      }
+    </script>
+
+    <script>
+      function startMainIllustrationSVG(){
+        var d1 = 1;
+        var v1 = new Vivus('bg-color', {duration: 250,reverseStack:true, type:'sync' ,file: './images/homeAnimation.svg',start: 'manual',speed:100},function(c){
+        d1 *= -1;
+        if(d1 == 1){
+          setTimeout(function(){
+            v1.stop()
+            .reset()
+            .play(d1)
+          },2000);
+        }else{
+          setTimeout(function(){
+            v1.stop()
+            .reset()
+            .play(d1)
+          },2000);
+        }});
+        v1.play(d1);
+      }
+    </script>
     <script src = "./bundle.js"></script>
     <script src = "./script.js"></script>
-    <script>
-      var d = 1;
-      var v = new Vivus('my-div', {duration: 200, file: './images/drawText.svg',start: 'manual',speed:300},function(c){
-  	  d *= -1;
-      if(d == 1){
-      	setTimeout(function(){
-          v.play(d)
-        },200);
-      }else{
-        v.play(d);
-      }});
-      v.play(d);
-    </script>
-    <script>
-      var d1 = 1;
-      var v1 = new Vivus('bg-color', {duration: 250,reverseStack:true, type:'sync' ,file: './images/homeAnimation.svg',start: 'manual',speed:100},function(c){
-      d1 *= -1;
-      if(d1 == 1){
-        setTimeout(function(){
-          v1.stop()
-          .reset()
-          .play(d1)
-        },2000);
-      }else{
-        setTimeout(function(){
-          v1.stop()
-          .reset()
-          .play(d1)
-        },2000);
-      }});
-      v1.play(d1);
-    </script>
   </body>
 </html>
