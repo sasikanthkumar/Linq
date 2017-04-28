@@ -1631,7 +1631,7 @@ input[type=radio]:focus{
 
 /** main illustration cover **/
 #banner{
-  background: url(./images/MainScreenGraphic.jpg) no-repeat center top;
+  background: url(./images/homepattern.jpg) no-repeat center top;
     background-size: cover;
     min-height: 100vh;
     display: block;
@@ -2430,7 +2430,7 @@ font-weight: 300;
   width: 90%;
   margin-top: 5%;
   margin-bottom: 5%;
-
+  height: 200px;
 }
 
 .blog-card-heading{
@@ -2478,4 +2478,32 @@ font-weight: 300;
   text-align: left;
   margin: 5%;
 
+}
+
+.blog-read-more-btn a{
+  color: white;
+}
+
+#bg-color svg{
+    height: 100vh !important;
+}
+
+#bg-color{
+    /*margin-top: 5vh !important;*/
+}
+
+.messagingPartnerDiv h2{
+  position: relative;
+  color: #fff;
+  font: 700 14px/30px "Raleway", sans-serif;
+  cursor: default;
+  letter-spacing: .05em;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.messagingPartnerDiv img{
+  width: 100px;
+  margin-left: 20px;
+  margin-bottom: 15px;
 }

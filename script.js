@@ -21,9 +21,6 @@ if (document.documentElement.clientWidth >= 768) {
   });
 }
 
-
-
-
 $(document).ready(function(){
   // hide our element on page load
   $('.whatIsLinqContainer .whatIsLinqHeading').css('opacity', 0);
