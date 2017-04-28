@@ -71,6 +71,13 @@ class Footer extends React.Component{
                 <li><Link to = "/gallery">Gallery</Link></li>
                 <li><Link to = "/contactUs">Contact Us</Link></li>
               </ul>
+
+            </div>
+          </div>
+          <div className = 'row'>
+            <div className = 'messagingPartnerDiv'>
+              <h2>Messaging Partner</h2>
+              <img src = './images/msg91.png'></img>
             </div>
           </div>
 

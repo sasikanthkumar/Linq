@@ -1,8 +1,50 @@
 import React from 'react';
+import axios from 'axios';
 
 
 class LatestFromOurBlog extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {posts:[]};
+  }
+
+  componentDidMount(){
+    this.getBlogPosts();
+  }
+
+  getBlogPosts(){
+    var that = this;
+    axios.get('https://www.googleapis.com/blogger/v3/blogs/5728913959294910709/posts?key=AIzaSyDOVpARXrr8V33i8iE_UmaWILmzMMAZhXg&fetchImages=true&fetchBody=true', {})
+    .then(function (response) {
+      var postsArray = response.data.items;
+      if(postsArray.length >=3){
+        postsArray = postsArray.slice(0,3);
+      }
+      that.setState({ posts: postsArray });
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  }
+
   render(){
+    const postsComp = this.state.posts.map((item, i) => {
+      console.log(item.images[0].url);
+      return (
+        <div className = 'col-md-4' key = {i}>
+          <div className="blog-card">
+            <img src = {item.images[0].url}></img>
+            <h3 className  = 'blog-card-heading'>{item.title}</h3>
+            {/*
+            <p className = 'blog-card-text'></p>
+            */}
+            <div className = 'blog-read-more-btn-div'>
+              <button className = 'blog-read-more-btn'><a href = {item.url} target="_blank">READ MORE</a></button>
+            </div>
+          </div>
+        </div>);
+    });
+
     return(
       <div className = 'container-fluid blogContainer'>
         <div className="row">
@@ -11,6 +53,8 @@ class LatestFromOurBlog extends React.Component{
           </div>
         </div>
         <div className = 'row blogCardsRow'>
+          {postsComp}
+          {/*
           <div className = 'col-md-4'>
             <div className="blog-card">
               <img src = './images/image1.jpg'></img>
@@ -56,6 +100,7 @@ class LatestFromOurBlog extends React.Component{
                </div>
             </div>
           </div>
+          */}
         </div>
       </div>
     );

@@ -22,14 +22,16 @@ class MainIllustration extends React.Component{
 
         <MediaQuery query='(min-width: 1224px)'>
 
-
         <section id="banner">
           <div className="bg-color">
             <div className="container">
-
               <div className="row">
 
-                <div className  = 'col-md-offset-7 col-md-5'>
+                <div className='col-md-6'>
+                  <div id="bg-color"></div>
+                </div>
+
+                <div className  = 'col-md-offset-1 col-md-5'>
                   <h2 className="logo-name">Transforming<br></br>The Way India Shops</h2>
                   <Link to="/open-a-store-form" className = 'mainIllustrationLink'><button className = 'form-links-btn' onClick={this.handleClick}> Open A Store </button></Link>
                 </div>
