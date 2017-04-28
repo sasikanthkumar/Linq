@@ -4,6 +4,11 @@ import MediaQuery from 'react-responsive';
 
 
 class MainIllustration extends React.Component{
+
+  componentDidMount(){
+    window.startMainIllustrationSVG();
+  }
+
   render(){
     return(
         /**

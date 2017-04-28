@@ -872,6 +872,9 @@ body{
   -o-transition: 0.3s;
   transition: 0.3s;
   margin:15px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 30px;
   box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
   &:hover {
     transform: translateY(-3px);
@@ -2506,4 +2509,21 @@ font-weight: 300;
   width: 100px;
   margin-left: 20px;
   margin-bottom: 15px;
+}
+
+.openAStoreButtonRow, .whyPartnerButtonRow{
+  text-align: center !important;
+}
+
+.openAStoreButtonRow button{
+    border-radius: 30px !important;
+    background: #000528 !important;
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2);
+}
+
+.whyPartnerButtonRow button{
+    border-radius: 30px !important;
+    background: #fe9a00 !important;
+    color: #2d2e3a;
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2);
 }

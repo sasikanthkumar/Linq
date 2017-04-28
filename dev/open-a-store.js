@@ -1,5 +1,6 @@
 import React from 'react';
 import MediaQuery from 'react-responsive';
+import { Link } from 'react-router-dom';
 
 
 class OpenAStore extends React.Component{
@@ -68,6 +69,9 @@ class OpenAStore extends React.Component{
               </div>
             </div>
           </div>
+        </div>
+        <div className = 'row openAStoreButtonRow'>
+          <Link to="/open-a-store-form" ><button className = 'form-links-btn' onClick={this.handleClick}> Open A Store </button></Link>
         </div>
       </div>
     );

@@ -10,6 +10,7 @@ $(document).ready(function(){
         navbar.removeClass('change-color');
       }
     });
+
 });
 
 if (document.documentElement.clientWidth >= 768) {

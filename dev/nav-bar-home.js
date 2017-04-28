@@ -29,13 +29,13 @@ class NavBarHome extends React.Component {
   }
 
   handleOpenAStoreClick(e){
-    scrollToElement('.open-a-store-section',{
+    scrollToElement('#benefitsOfOpeningStore',{
       offset:-60,
     });
   }
 
   handleFranchiseRequirementsClick(e){
-    scrollToElement('.franchise-requirements-section',{
+    scrollToElement('.franchiseRequirementsContainer',{
       offset:-60,
     });
   }

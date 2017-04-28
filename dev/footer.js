@@ -11,6 +11,10 @@ class Footer extends React.Component{
     this.handleBackToTop = this.handleBackToTop.bind(this);
   }
 
+  componentDidMount(){
+    window.startFooterSVG();
+  }
+
   handleBackToTop(e){
     scrollToElement('#banner',{
       offset: -60,
