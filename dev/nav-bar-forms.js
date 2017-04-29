@@ -35,6 +35,7 @@ class NavBarForms extends React.Component {
           <li><Link to="/partner-with-us-form"  className = 'navBarLinks'>partner with us</Link></li>
         </ul>
         <ul className="nav navbar-nav navbar-right">
+          <li> <a href="http://linqstore.blogspot.in/" className = 'navBarLinks' target = "_blank">Blog</a> </li>
           <li><Link to="/gallery"  className = 'navBarLinks'>Gallery</Link></li>
           <li><Link to="/careers"  className = 'navBarLinks'>Careers</Link></li>
           <li><Link to="/contactUs"  className = 'navBarLinks'>Contact Us</Link></li>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="background: aquamarine;"
+<html style="background: white;"
       xmlns="http://www.w3.org/1999/xhtml"
       xmlns:fb="http://ogp.me/ns/fb#">
   <head lang = "en">
@@ -65,21 +65,27 @@
     <script>
       function startMainIllustrationSVG(){
         var d1 = 1;
+        var loading = document.getElementById ( "bg-color" ) ;
         var v1 = new Vivus('bg-color', {duration: 250,reverseStack:true, type:'sync' ,file: './images/homeAnimation.svg',start: 'manual',speed:100},function(c){
         d1 *= -1;
         if(d1 == 1){
           setTimeout(function(){
             v1.stop()
             .reset()
-            .play(d1)
+            .play(d1);
           },2000);
         }else{
           setTimeout(function(){
             v1.stop()
             .reset()
-            .play(d1)
-          },2000);
+            .play(d1);
+
+          },1000);
         }});
+        //var loading = document.getElementById ( "bg-color" ) ;
+        //loading.style.visibility = "visible" ;
+        //$('bg-color').fadeIn();
+        $("#bg-color").css("visibility","visible").hide().fadeIn(2000);
         v1.play(d1);
       }
     </script>

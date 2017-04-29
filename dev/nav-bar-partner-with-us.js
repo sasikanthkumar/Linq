@@ -52,11 +52,11 @@ class NavBarPartnerWithUs extends React.Component {
         </ul>
 
         <ul className="nav navbar-nav navbar-right">
+          <li> <a href="http://linqstore.blogspot.in/" className = 'navBarLinks' target = "_blank">Blog</a> </li>
           <li><Link to="/gallery"  className = 'navBarLinks'>Gallery</Link></li>
           <li><Link to="/careers"  className = 'navBarLinks'>Careers</Link></li>
           <li><Link to="/contactUs"  className = 'navBarLinks'>Contact Us</Link></li>
         </ul>
-
       </nav>
       </div>
     </header>

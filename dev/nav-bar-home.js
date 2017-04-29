@@ -14,10 +14,17 @@ class NavBarHome extends React.Component {
     this.handleContactUsClick = this.handleContactUsClick.bind(this);
     this.handleOurPartnersClick = this.handleOurPartnersClick.bind(this);
     this.handleWhyPartnerClick = this.handleWhyPartnerClick.bind(this);
+    this.handleBlogClick = this.handleBlogClick.bind(this);
   }
 
   handleHomeClick(e){
     scrollToElement('.myWrapper',{
+      offset: -60,
+    });
+  }
+
+  handleBlogClick(e){
+    scrollToElement('.blogContainer',{
       offset: -60,
     });
   }
@@ -117,13 +124,11 @@ class NavBarHome extends React.Component {
         </ul>
 
         <ul className="nav navbar-nav navbar-right">
+          <li> <a href="#" className = 'navBarLinks' onClick={this.handleBlogClick}>Blog</a> </li>
           <li><Link to="/gallery"  className = 'navBarLinks'>Gallery</Link></li>
           <li><Link to="/careers"  className = 'navBarLinks'>Careers</Link></li>
           <li><Link to="/contactUs"  className = 'navBarLinks'>Contact Us</Link></li>
-
-
         </ul>
-
       </nav>
       </div>
     </header>
