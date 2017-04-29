@@ -2493,6 +2493,7 @@ font-weight: 300;
 
 #bg-color{
     /*margin-top: 5vh !important;*/
+    visibility: hidden;
 }
 
 .messagingPartnerDiv h2{
@@ -2526,4 +2527,21 @@ font-weight: 300;
     background: #fe9a00 !important;
     color: #2d2e3a;
     box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2);
+}
+
+.continueToBlogRow a{
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  background: #08152a;
+  padding: 12px;
+  border-radius: 0px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.continueToBlogRow{
+  text-align: right;
+  margin-bottom: 30px;
+  margin-right: 45px;
 }
