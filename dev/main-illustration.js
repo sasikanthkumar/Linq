@@ -1,15 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import MediaQuery from 'react-responsive';
-
-
+import YouTube from 'react-youtube';
 class MainIllustration extends React.Component{
 
   componentDidMount(){
     window.startMainIllustrationSVG();
   }
 
+  _onReady(event) {
+    // access to player in all event handlers via event.target
+    //event.target.pauseVideo();
+  }
+
   render(){
+    const opts = {
+      height: '240',
+      width: '426',
+      playerVars: {
+        autoplay: 1
+      }
+    };
+
     return(
         /**
         <div className="container-fluid">
@@ -29,16 +41,25 @@ class MainIllustration extends React.Component{
 
         <section id="banner">
           <div className="bg-color">
-            <div className="container">
-              <div className="row">
+            <div className="container mainSVGanimContainer">
+              <div className="row mainSVGanimRow">
 
-                <div className='col-md-6'>
-                  <div id="bg-color"></div>
+                <div className='col-md-6 '>
+                  <div id="bg-animation"></div>
                 </div>
 
-                <div className  = 'col-md-offset-1 col-md-5'>
-                  <h2 className="logo-name">Transforming<br></br>The Way India Shops</h2>
-                  <Link to="/open-a-store-form" className = 'mainIllustrationLink'><button className = 'form-links-btn' onClick={this.handleClick}> Open A Store </button></Link>
+                <div className  = 'col-md-6' id = "start-ur-business-banner">
+                  <YouTube
+                    className = 'youtubeVideo'
+                    videoId="WkCgWEhJTCI"
+                    opts={opts}
+                    onReady={this._onReady}
+                  />
+                  {/*
+                  <p>LinQ store has a mission to connect brands and consumers from all walks of life and create a trustworthy ecosystem thus transforming the way India shops.</p>
+                  */}
+                  <h1 className="logo-name">Business Opportunities <br></br>with LinQ</h1>
+                  <Link to="/open-a-store-form" className = 'mainIllustrationLink'><button className = 'form-links-btn' onClick={this.handleClick}>Start Your Business Today</button></Link>
                 </div>
                 {/*
                 <div className="inner text-center">

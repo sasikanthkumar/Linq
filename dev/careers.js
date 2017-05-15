@@ -1,6 +1,12 @@
 import React from 'react';
 
 class Careers extends React.Component{
+
+  componentDidMount(){
+    window.scrollTo(0,0);
+  }
+
+  
   render(){
     return(
       <div className = 'container-fluid careersContainer'>

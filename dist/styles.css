@@ -750,12 +750,13 @@ body{
 }
 
 .testimonial p.author img {
-    width: 60px;
-    margin-right: 20px;
+    width: 40px;
+    margin-right: 10px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
+    display: inline-block;
 }
 
 
@@ -872,6 +873,7 @@ body{
   -o-transition: 0.3s;
   transition: 0.3s;
   margin:15px;
+  margin-top: 0px !important;
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
   line-height: 30px;
@@ -1656,16 +1658,28 @@ input[type=radio]:focus{
 .logo-name {
     font-family: 'Satisfy', sans-serif;
     font-size: 65px;
-    margin-top:40vh;
+    margin-top:5vh;
     color: #FFB03B;
 }
 
 
-#banner h2 {
+#banner h1 {
     /*font-family: 'Satisfy', sans-serif;*/
-    font-size: 45px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
     color: #17275b;
+    text-align: center;
+
 }
+
+#start-ur-business-banner{
+  text-align: center;
+}
+
+
 
 #banner p {
     /*font-family: 'PT Sans', sans-serif;*/
@@ -1673,6 +1687,15 @@ input[type=radio]:focus{
     font-size: 34px;
 }
 
+
+#start-ur-business-banner p{
+  color: #17275b;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: 1px;
+}
 
 .mainIllustrationLink{
   margin-left: -12px;
@@ -2034,10 +2057,14 @@ font-weight: 300;
 
 .franchiseRequirementsHeading{
   padding-top: 100px;
-  font-size: 24px;
-  font-weight: 600;
   margin-top: 0px;
   color: #ff9c00;
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 60px;
 }
 
 /*
@@ -2544,4 +2571,74 @@ font-weight: 300;
   text-align: right;
   margin-bottom: 30px;
   margin-right: 45px;
+}
+
+
+.openAStoreFormText{
+  text-align: center;
+}
+
+.mainIllustrationLink .form-links-btn{
+  width: 250px;
+}
+
+
+
+.content {display:none;}
+.preload { width:100px;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;}
+
+.mainSVGanimContainer{
+  height: 100vh;
+}
+
+.mainSVGanimRow{
+  height: 100%;
+  /*display: inline-flex;*/
+}
+
+#bg-animation{
+  width: 100%;
+  margin-top: 20%;
+}
+
+
+.notFoundContainer{
+  min-height: calc(100vh - 64px);
+}
+
+
+.notFoundContainer h1{
+  margin-top: 45vh;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+
+}
+
+.notFoundContainer p{
+  color: #17275b;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.notFoundContainer span{
+  display: inline-block;
+}
+
+.notFoundToHomeLink{
+}
+
+.youtubeVideo{
+  margin-top: 27vh;
 }

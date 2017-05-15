@@ -8,13 +8,16 @@ class WhatIsLinq extends React.Component{
         <div className = 'row rowPaddingBtm'>
           <div className = 'col-md-8 col-md-offset-2'>
             {/*<Link to="/partner-with-us-form" ><button className = 'form-links-btn' onClick={this.handleClick}> Partner With Us </button></Link>*/}
-            <h2 className = 'whatIsLinqHeading animated'>What Is Linq?</h2>
-            <p className = 'whatIsLinqText animated'>An aggregation of various e-commerce avenues onto a unified digitalised platform. Put into perspective, it’s an online super bazaar with an extensive assemblage of retail, travel, health care, insurance, pharmacy, money-transfer, matrimony and various other services under a single roof.As a single point digital platform, we have a string of highly regarded global organizations driving the LINQ ecosystem forward.</p>
+            <h2 className = 'whatIsLinqHeading animated'>What is a LinQ store?</h2>
+            <p className = 'whatIsLinqText animated'>A LinQ store is an online super bazaar with an aggregation of various e-commerce services like retail, travel, health care, insurance, pharmacy, money-transfer, matrimony and others under a single platform. ontonified digitalised platform. As a single point digital platform, we have a string of highly regarded global organizations driving the LINQ ecosystem forward.<br></br><br></br>
+            LinQ stores are providing business opportunities for enterprising individuals who want to start a business of their own in their local town.<br></br><br></br>
+            If you are looking to start a business in your town, opening a LinQ store would definitely be an exciting option.
+            </p>
           </div>
         </div>
         <div className = 'row'>
           <div className = 'col-md-12'>
-            <h3 className = 'linqAdvantages animated' id = 'linqAdvantagesId'>LinQ Advantages</h3>
+            <h3 className = 'linqAdvantages animated' id = 'linqAdvantagesId'>LinQ store advantages</h3>
           </div>
           <div className="col-md-3 col-sm-6">
 					  <div className = 'whatIsLinqCard animated'>

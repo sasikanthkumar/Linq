@@ -57,10 +57,13 @@ class Footer extends React.Component{
           </div>
           */}
           <div className = 'row '>
+            {/*
             <div className = 'col-md-4 col-sm-12 linq_logo_footer_col'>
               <img src ='./images/LinqLogo.svg' className = 'img-responsive' ></img>
             </div>
-            <div className = 'col-md-4 col-sm-12 linq_tag_line_footer_col'>
+            */}
+
+            <div className = 'col-md-8 col-sm-12 linq_tag_line_footer_col'>
               {/*<p>Transforming <br></br>The Way India <br></br>Shops</p>*/}
               <div id="my-div"></div>
             </div>
@@ -81,7 +84,7 @@ class Footer extends React.Component{
           <div className = 'row'>
             <div className = 'messagingPartnerDiv'>
               <h2>Messaging Partner</h2>
-              <img src = './images/msg91.png'></img>
+              <a href="https://msg91.com/startups/?utm_source=startup-banner"><img src="https://msg91.com/images/startups/msg91Badge.png" width="120" height="90" title="MSG91 - SMS for Startups" alt="Bulk SMS - MSG91"/></a>
             </div>
           </div>
 

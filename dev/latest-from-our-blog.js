@@ -39,7 +39,7 @@ class LatestFromOurBlog extends React.Component{
             <p className = 'blog-card-text'></p>
             */}
             <div className = 'blog-read-more-btn-div'>
-              <button className = 'blog-read-more-btn'><a href = {item.url} target="_blank">READ MORE</a></button>
+              <a href = {item.url} target="_blank"><button className = 'blog-read-more-btn'>READ MORE</button></a>
             </div>
           </div>
         </div>);

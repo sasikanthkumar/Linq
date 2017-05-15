@@ -3,6 +3,8 @@ import VirtualizedSelect from 'react-virtualized-select';
 // Be sure to include styles at some point, probably during your bootstrapping
 const DATA = require('./data/products');
 import MediaQuery from 'react-responsive';
+import {ModalContainer, ModalDialog} from 'react-modal-dialog';
+import ReactSpinner from 'react-spinjs';
 
 import DatePicker from 'react-mobile-datepicker';
 
@@ -25,7 +27,8 @@ class FormPartnerWithUs extends React.Component{
     hearAboutUsError: false,
     submitButtonStatus:'Submit',
     showThankUMsg:false,
-
+    isShowingModal: false,
+    isLoading: true
     };
     this.handleChangeNameOfCompany = this.handleChangeNameOfCompany.bind(this);
     this.handleChangeWhichProducts = this.handleChangeWhichProducts.bind(this);
@@ -35,6 +38,8 @@ class FormPartnerWithUs extends React.Component{
     this.handleOptionChange = this.handleOptionChange.bind(this);
     this.handleChangeStartDateOfSelling = this.handleChangeStartDateOfSelling.bind(this);
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
+    this.handleClose = this.handleClose.bind(this);
+
   }
 
 
@@ -67,7 +72,9 @@ class FormPartnerWithUs extends React.Component{
     !(this.state.radioSelectedOption == '') &&
     !(this.state.mobileNumber == '' || this.state.mobileNumber.length<10) &&
     !(this.state.startDateOfSelling == '')){
-      this.setState({submitButtonStatus:'Submitting'});
+      this.setState({submitButtonStatus:'Submitting',
+      isShowingModal: true,
+      modalDialogText:'Submitting' });
       var that = this;
       axios.get('https://script.google.com/macros/s/AKfycbwrxvv0Fw4SHnSuR-dEUrzC8XghpkSdju_TyL1BdmsO7cq5HV4/exec', {
         params: {
@@ -96,8 +103,9 @@ class FormPartnerWithUs extends React.Component{
           mobileNumberError: false,
           hearAboutUsError: false,
           submitButtonStatus:'Submit',
-          showThankUMsg:true,
-
+          showThankUMsg:false,
+          isLoading:false,
+          modalDialogText:'Your response has been saved.'
         });
       })
       .catch(function (error) {
@@ -124,6 +132,9 @@ class FormPartnerWithUs extends React.Component{
     });
   }
 
+  handleClose(){
+    this.setState({isShowingModal: false});
+  }
 
   handleChangeNameOfCompany(event) {
     this.setState({nameOfCompany: event.target.value});
@@ -152,6 +163,21 @@ class FormPartnerWithUs extends React.Component{
     var options = DATA.PRODUCTS;
     return(
       <div className = 'container-fluid openAStoreFormContainer partnerWithUsFormContainer'>
+
+      {
+        this.state.isShowingModal &&
+        <ModalContainer onClose={this.handleClose}>
+        {
+            this.state.isLoading ?
+            <ReactSpinner/> :
+            <ModalDialog onClose={this.handleClose}>
+              <h1>Thank You</h1>
+              <p>{this.state.modalDialogText}</p>
+            </ModalDialog>
+        }
+        </ModalContainer>
+      }
+
         <div className = 'row'>
 
           <div className = 'col-md-offset-2 col-md-8 openAStoreFormInnerContainer'>
@@ -285,6 +311,30 @@ class FormPartnerWithUs extends React.Component{
                       Facebook
                     </label>
                   </div>
+
+                  <div className="radio">
+                    <label>
+                      <input type="radio" value="Newspaper" checked={this.state.radioSelectedOption == 'Newspaper' } onChange={this.handleOptionChange}/>
+                      Newspaper
+                    </label>
+                  </div>
+
+                  <div className="radio">
+                    <label>
+                      <input type="radio" value="Quora" checked={this.state.radioSelectedOption == 'Quora' } onChange={this.handleOptionChange}/>
+                      Quora
+                    </label>
+                  </div>
+
+
+                  <div className="radio">
+                    <label>
+                      <input type="radio" value="Google" checked={this.state.radioSelectedOption == 'Google' } onChange={this.handleOptionChange}/>
+                      Google
+                    </label>
+                  </div>
+
+
                   <div className="radio">
                     <label>
                       <input type="radio" value="Other" checked={this.state.radioSelectedOption == 'Other' } onChange={this.handleOptionChange}/>

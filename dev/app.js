@@ -14,6 +14,7 @@ import GalleryHolder from './galleryHolder';
 import FormPartnerWithUsHolder from './form-partner-with-us-holder';
 import CareersHolder from './careers-holder';
 import ContactUs from './contactUs';
+import NotFoundHolder from './not-found-holder';
 
 ReactDOM.render(
     <HashRouter  >
@@ -24,6 +25,7 @@ ReactDOM.render(
         <Route path = "/gallery" component = {GalleryHolder} />
         <Route path = "/careers" component = {CareersHolder} />
         <Route path = "/contactUs" component = {ContactUs} />
+        <Route path="*" component={NotFoundHolder} />
       </Switch>
     </HashRouter>,
     document.querySelector('.root')

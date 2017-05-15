@@ -1,8 +1,8 @@
 import React from 'react';
-import NavBarForms from './nav-bar-forms';
+import NavBarContactUs from './nav-bar-contact-us';
 import Footer from './footer';
 var axios = require('axios');
-
+import {ModalContainer, ModalDialog} from 'react-modal-dialog';
 const emailPattern = /(.+)@(.+){2,}\.(.+){2,}/;
 
 
@@ -16,12 +16,15 @@ class ContactUs extends React.Component{
       email:'',
       message:'',
       subject:'',
+      mobileNumber:'',
       fnameError: false,
       lnameError: false,
       subjectNameError: false,
+      mobileNumberError:false,
       emailError: false,
       messageError: false,
-      submitButtonStatus:'Send Message'
+      submitButtonStatus:'Send Message',
+      isShowingModal: false
     };
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleChangeFname = this.handleChangeFname.bind(this);
@@ -29,6 +32,9 @@ class ContactUs extends React.Component{
     this.handleChangeEmail = this.handleChangeEmail.bind(this);
     this.handleChangeSubject = this.handleChangeSubject.bind(this);
     this.handleChangeMessage = this.handleChangeMessage.bind(this);
+    this.handleClose = this.handleClose.bind(this);
+    this.handleChangeMobileNumber = this.handleChangeMobileNumber.bind(this);
+
   }
 
 
@@ -49,6 +55,9 @@ class ContactUs extends React.Component{
     if (this.state.message == '') {
       this.setState({messageError: true});
     }
+    if (this.state.mobileNumber == '' || this.state.mobileNumber.length<10) {
+      this.setState({mobileNumberError: true});
+    }
     if (this.state.email == '' || !emailPattern.test(this.state.email)) {
       this.setState({emailError: true});
     }
@@ -57,16 +66,19 @@ class ContactUs extends React.Component{
     !(this.state.lname == '') &&
     !(this.state.message == '') &&
     !(this.state.subject == '') &&
+    !(this.state.mobileNumber == '' || this.state.mobileNumber.length<10) &&
     !(this.state.email == '' || !emailPattern.test(this.state.email))){
       this.setState({submitButtonStatus:'Submitting'});
 
 
       var that = this;
-      axios.get('https://script.google.com/macros/s/AKfycbyNlwdG0Ouyx4R8VHrDjGFLXoTbTCg0XIKdOWnqBxI7jBCj0Z4g/exec', {
+
+      axios.get('https://script.google.com/macros/s/AKfycbzakvU6OXxKGRgxfoCLhaHzoz5Gh8w2-fWPSe5EPiPIk7VDcyxB/exec', {
         params: {
           fname: this.state.fname,
           lname: this.state.lname,
           email:this.state.email,
+          mobileNumber: this.state.mobileNumber,
           subject:this.state.subject,
           message:this.state.message,
         }
@@ -79,12 +91,15 @@ class ContactUs extends React.Component{
           email:'',
           message:'',
           subject:'',
+          mobileNumber:'',
           fnameError: false,
           lnameError: false,
           subjectNameError: false,
           emailError: false,
           messageError: false,
-          submitButtonStatus:'Send Message'
+          mobileNumberError: false,
+          submitButtonStatus:'Send Message',
+          isShowingModal: true
         });
       })
       .catch(function (error) {
@@ -97,8 +112,18 @@ class ContactUs extends React.Component{
     this.setState({fname: event.target.value});
   }
 
+  handleClose(){
+    this.setState({isShowingModal: false});
+  }
+
   handleChangeLname(event){
     this.setState({lname: event.target.value});
+  }
+
+  handleChangeMobileNumber(event){
+    if ((event.target.value >0 || event.target.value == '') && (event.target.value.length <= 10)) {
+      this.setState({mobileNumber: event.target.value});
+    }
   }
 
   handleChangeEmail(event){
@@ -117,7 +142,18 @@ class ContactUs extends React.Component{
   render(){
     return(
       <div>
-        <NavBarForms />
+
+      {
+        this.state.isShowingModal &&
+        <ModalContainer onClose={this.handleClose}>
+          <ModalDialog onClose={this.handleClose}>
+            <h1>Thank You</h1>
+            <p>Your message has been sent.</p>
+          </ModalDialog>
+        </ModalContainer>
+      }
+
+        <NavBarContactUs />
         <header id="fh5co-header" className="fh5co-cover fh5co-cover-sm" role="banner"  data-stellar-background-ratio="0.5">
           <div className="overlay">
           </div>
@@ -177,6 +213,17 @@ class ContactUs extends React.Component{
                                )}
 							             </div>
 						           </div>
+
+                       <div className="row form-group">
+							             <div className="col-md-12">
+								               <label >Mobile Number<span className = 'reqiuredFieldStar'>*</span></label>
+								               <input value={this.state.mobileNumber} onChange = {this.handleChangeMobileNumber}  id="mobileNumber" className="form-control" placeholder="Your mobile number"/>
+                               {this.state.mobileNumberError && (
+                                   <span className = 'formErrorSpan'>This is a required question</span>
+                               )}
+							             </div>
+						           </div>
+
 
 						           <div className="row form-group">
 							           <div className="col-md-12">

@@ -3,37 +3,46 @@ import VirtualizedSelect from 'react-virtualized-select';
 // Be sure to include styles at some point, probably during your bootstrapping
 const DATA = require('./data/cities');
 import MediaQuery from 'react-responsive';
+import {ModalContainer, ModalDialog} from 'react-modal-dialog';
+import ReactSpinner from 'react-spinjs';
 
 import DatePicker from 'react-mobile-datepicker';
 
 import Calendar from 'react-input-calendar';
 var axios = require('axios');
+const emailPattern = /(.+)@(.+){2,}\.(.+){2,}/;
 
 import { DateRangePicker, SingleDatePicker, DayPickerRangeController } from 'react-dates';
 class FormOpenStoreSinglePage extends React.Component{
 
   constructor(props) {
     super(props);
-    this.state = {nameOfTownVillage: '', stateOrUnionTerritory: '',firstName:'', lastName:'', focused: false, radioSelectedOption: '', startDateOfStore: '', mobileNumber:'',
+    this.state = {nameOfTownVillage: '', emailAddress:'',stateOrUnionTerritory: '',firstName:'', lastName:'', focused: false, radioSelectedOption: '', startDateOfStore: '', mobileNumber:'',
     townVillageError: false,
     stateError: false,
     firstNameError: false,
     lastNameError: false,
+    emailAddressError: false,
     startDateOfStoreError: false,
     mobileNumberError: false,
     hearAboutUsError: false,
     submitButtonStatus:'Submit',
     showThankUMsg: false,
+    isShowingModal: false,
+    isLoading: true
     };
     this.handleChangeNameOfTownVillage = this.handleChangeNameOfTownVillage.bind(this);
     this.handleChangeStateOrUnionTerritory = this.handleChangeStateOrUnionTerritory.bind(this);
     this.handleChangeFirstName = this.handleChangeFirstName.bind(this);
     this.handleChangeLastName = this.handleChangeLastName.bind(this);
+    this.handleChangeEmailAddress = this.handleChangeEmailAddress.bind(this);
     this.handleChangeMobileNumber = this.handleChangeMobileNumber.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleOptionChange = this.handleOptionChange.bind(this);
     this.handleChangeStartDateOfStore = this.handleChangeStartDateOfStore.bind(this);
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
+    this.handleClose = this.handleClose.bind(this);
+
   }
 
 
@@ -47,6 +56,11 @@ class FormOpenStoreSinglePage extends React.Component{
     if (this.state.firstName == '') {
       this.setState({firstNameError: true});
     }
+
+    if (this.state.emailAddress == '' || !emailPattern.test(this.state.emailAddress)) {
+      this.setState({emailAddressError: true});
+    }
+
     if (this.state.lastName == '') {
       this.setState({lastNameError: true});
     }
@@ -64,17 +78,21 @@ class FormOpenStoreSinglePage extends React.Component{
     if(!(this.state.nameOfTownVillage == '') &&
     !(this.state.stateOrUnionTerritory == '') &&
     !(this.state.firstName == '') &&
+    !(this.state.emailAddress == '' || !emailPattern.test(this.state.emailAddress)) &&
     !(this.state.lastName == '') &&
     !(this.state.radioSelectedOption == '') &&
     !(this.state.mobileNumber == '' || this.state.mobileNumber.length<10) &&
     !(this.state.startDateOfStore == '')){
-      this.setState({submitButtonStatus:'Submitting'});
+      this.setState({submitButtonStatus:'Submitting',
+      isShowingModal: true,
+      modalDialogText:'Submitting'});
       var that = this;
       axios.get('https://script.google.com/macros/s/AKfycbz2iMwdmlNURZsN4nVw4Rnem7q73WdJ7TFV6amS7I0wxoWHfjNP/exec', {
         params: {
           nameOfTownOrVillage: this.state.nameOfTownVillage,
           stateOrUnionTerritory: this.state.stateOrUnionTerritory,
           firstName:this.state.firstName,
+          emailAddress:this.state.emailAddress,
           lastName:this.state.lastName,
           howDidYouHearAboutUs:this.state.radioSelectedOption,
           mobileNumber:this.state.mobileNumber,
@@ -87,6 +105,7 @@ class FormOpenStoreSinglePage extends React.Component{
           nameOfTownVillage: '',
           stateOrUnionTerritory: '',
           firstName:'',
+          emailAddress:'',
           lastName:'',
           focused: false,
           radioSelectedOption: '',
@@ -100,7 +119,11 @@ class FormOpenStoreSinglePage extends React.Component{
           mobileNumberError: false,
           hearAboutUsError: false,
           submitButtonStatus:'Submit',
-          showThankUMsg:true,
+          showThankUMsg:false,
+          emailAddressError: false,
+          isShowingModal: true,
+          isLoading:false,
+          modalDialogText:'Your response has been saved.'
         });
       })
       .catch(function (error) {
@@ -137,6 +160,11 @@ class FormOpenStoreSinglePage extends React.Component{
     this.setState({firstName: event.target.value});
   }
 
+  handleClose(){
+    this.setState({isShowingModal: false});
+  }
+
+
   handleChangeLastName(event){
     this.setState({lastName: event.target.value});
   }
@@ -151,6 +179,10 @@ class FormOpenStoreSinglePage extends React.Component{
     }
   }
 
+  handleChangeEmailAddress(event){
+    this.setState({emailAddress: event.target.value});
+  }
+
   handleSubmit(event) {
     console.log('A name was submitted: ' + this.state.stateOrUnionTerritory);
     event.preventDefault();
@@ -160,6 +192,21 @@ class FormOpenStoreSinglePage extends React.Component{
     var options = DATA.CITIES;
     return(
       <div className = 'container-fluid openAStoreFormContainer'>
+
+      {
+        this.state.isShowingModal &&
+        <ModalContainer onClose={this.handleClose}>
+        {
+            this.state.isLoading ?
+            <ReactSpinner/> :
+            <ModalDialog onClose={this.handleClose}>
+              <h1>Thank You</h1>
+              <p>{this.state.modalDialogText}</p>
+            </ModalDialog>
+        }
+        </ModalContainer>
+      }
+
         <div className = 'row'>
 
           <div className = 'col-md-offset-2 col-md-8 openAStoreFormInnerContainer'>
@@ -220,6 +267,20 @@ class FormOpenStoreSinglePage extends React.Component{
                   </label>
                 </div>
               </div>
+
+
+              <div className = 'row'>
+                <div className ='col-md-offset-2 col-md-10 col-sm-12'>
+                  <label>
+                    Email Address:<span className = 'reqiuredFieldStar'>*</span>
+                    <input type="email" value={this.state.emailAddress} onChange={this.handleChangeEmailAddress} />
+                    {this.state.emailAddressError && (
+                        <span className = 'formErrorSpan'>This is a required question</span>
+                    )}
+                  </label>
+                </div>
+              </div>
+
 
               <div className = 'row'>
 
@@ -298,6 +359,29 @@ class FormOpenStoreSinglePage extends React.Component{
                       Online
                     </label>
                   </div>
+
+                  <div className="radio">
+                    <label>
+                      <input type="radio" value="Newspaper" checked={this.state.radioSelectedOption == 'Newspaper' } onChange={this.handleOptionChange}/>
+                      Newspaper
+                    </label>
+                  </div>
+
+                  <div className="radio">
+                    <label>
+                      <input type="radio" value="Quora" checked={this.state.radioSelectedOption == 'Quora' } onChange={this.handleOptionChange}/>
+                      Quora
+                    </label>
+                  </div>
+
+
+                  <div className="radio">
+                    <label>
+                      <input type="radio" value="Google" checked={this.state.radioSelectedOption == 'Google' } onChange={this.handleOptionChange}/>
+                      Google
+                    </label>
+                  </div>
+
                   <div className="radio">
                     <label>
                       <input type="radio" value="Facebook" checked={this.state.radioSelectedOption == 'Facebook' } onChange={this.handleOptionChange}/>

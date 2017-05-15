@@ -17,7 +17,7 @@ class OpenAStore extends React.Component{
           </div>
           */}
           <div className = 'col-md-12'  >
-            <h2 className = 'whatIsLinqHeading animated' id = 'open-a-store-heading'>Open a Store</h2>
+            <h2 className = 'whatIsLinqHeading animated' id = 'open-a-store-heading'>Open a LinQ store</h2>
           </div>
 
           <div className = 'col-md-offset-2 col-md-8 animated openAStoreText'>
@@ -27,7 +27,7 @@ class OpenAStore extends React.Component{
         </div>
         <div className = 'row linqAdvantagesRow'>
           <div className = 'col-md-12 animated' id = 'benefitsOfOpeningStore'>
-            <h3 className = 'linqAdvantages animated' >Benefits of opening a store</h3>
+            <h3 className = 'linqAdvantages animated' >Benefits of opening a LinQ store</h3>
           </div>
         </div>
         <div className="row">

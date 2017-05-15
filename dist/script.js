@@ -135,3 +135,9 @@ $(document).ready(function(){
   }, { offset: '50%' });
 
 });
+
+
+$(function() {
+    $(".root").fadeIn(2000);
+    $(".preload").css('display', 'none');
+});
