@@ -4,15 +4,19 @@ var babelify = require('babelify');
 var source = require('vinyl-source-stream');
 var nodemon = require('gulp-nodemon');
 var browserSync = require('browser-sync');
-
+var uglify = require('gulp-uglify');
+var buffer = require('vinyl-buffer');
+var streamify = require('gulp-streamify')
 var BROWSER_SYNC_RELOAD_DELAY = 500;
 
 
 gulp.task('build', function () {
-    return browserify({entries: './dev/app.js', extensions: ['.js'], debug: true})
+    process.env.NODE_ENV = 'production';
+    return browserify({entries: './dev/app.js', extensions: ['.js']})
         .transform('babelify', {presets: ['es2015', 'react']})
         .bundle()
         .pipe(source('bundle.js'))
+        .pipe(streamify(uglify()))
         .pipe(gulp.dest('dist'));
 });
 
